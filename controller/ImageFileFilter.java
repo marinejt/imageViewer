@@ -11,7 +11,7 @@ import javax.swing.filechooser.FileFilter;
  */
 public class ImageFileFilter extends FileFilter {
 	/* unique file extension allowed */
-	private static final String EXTENSION = "ras";
+	private static final String EXTENSION = "bmp";
 	
 	@Override
 	public boolean accept(File arg0) {
