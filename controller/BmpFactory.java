@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.File;
+import java.io.IOException;
 
 import controller.ImageFactory;
 
@@ -24,7 +25,14 @@ public class BmpFactory implements ImageFactory {
 	 * @see controller.ImageFactory#build(java.io.File)
 	 */
 	public Image build(File file) {
-		return new ImageBmp(file);
+		Image image = null;
+			try {
+				image =  new ImageBmp(file);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return image;
 	}
 	
 	/**
