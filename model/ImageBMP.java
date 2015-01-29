@@ -11,9 +11,9 @@ import java.awt.image.MemoryImageSource;
 
 import model.Image;
 
-public class ImageBmp extends Image{
+public class ImageBMP extends Image{
 
-	public ImageBmp(File file) throws IOException  {
+	public ImageBMP(File file) throws IOException  {
 		
 		FileInputStream fs = null;
 		java.awt.Image image;
