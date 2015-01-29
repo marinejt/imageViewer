@@ -51,8 +51,8 @@ public class ImagePanel extends JPanel {
 			/* make sure received a valid Image to display */
 			if(_buffer != null) {				
 				/* center the image */
-				x = (this.getWidth() - _image.getWidth()) / 2;
-				y = (this.getHeight() - _image.getHeight()) / 2;
+				x = 0;//(this.getWidth() - _image.getWidth()) / 2;
+				y =0;// (this.getHeight() - _image.getHeight()) / 2;
 				setBounds(x,y,_image.getWidth(),_image.getHeight());
 				
 				/* draw the image */
