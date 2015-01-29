@@ -13,12 +13,7 @@ import model.Image;
 
 public class ImageBMP extends Image{
 
-<<<<<<< HEAD
-	
-	public ImageBmp(File file) throws IOException  {
-=======
 	public ImageBMP(File file) throws IOException  {
->>>>>>> origin/master
 		
 		FileInputStream fs = null;
 		java.awt.Image image;

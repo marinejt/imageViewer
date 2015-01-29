@@ -3,6 +3,8 @@ package model;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
+import controller.BmpFactory;
+
 /**
  * The ProxyImage object acts as an intermediate between the actual Image and
  * the object using the Image. As long as the Image doesn't need to be drawn,
@@ -22,6 +24,7 @@ public class ProxyImage extends Image {
 	 */
 	public ProxyImage(File file) {
 		super._file = file;		
+		_concrete = new BmpFactory().build(_file);
 	}
 	
 	@Override
