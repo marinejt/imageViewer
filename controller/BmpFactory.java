@@ -17,21 +17,28 @@ public class BmpFactory implements ImageFactory {
 	private static ImageFactory _instance = null;
 	
 	/** Hides the constructor from outside the class. */
-	private BmpFactory() {};
+	//private BmpFactory() {};
 	
 	/*
 	 *  (non-Javadoc)
 	 * @see controller.ImageFactory#build(java.io.File)
 	 */
 	public Image build(File file) {
-		Image image = null;
+		/*Image image = null;
 			try {
 				image =  new ImageBMP(file);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			return image;
+		return image;*/
+		try {
+			return new ImageBMP(file);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
 	}
 	
 	/**
