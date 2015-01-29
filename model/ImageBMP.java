@@ -13,6 +13,7 @@ import model.Image;
 
 public class ImageBmp extends Image{
 
+	
 	public ImageBmp(File file) throws IOException  {
 		
 		FileInputStream fs = null;
@@ -142,7 +143,7 @@ public class ImageBmp extends Image{
 
             image = Toolkit.getDefaultToolkit().createImage( new MemoryImageSource (nwidth, nheight,ndata, 0, nwidth));
         }
-        System.out.println("Colors important are :"+nclrimp);
+        
  
 	}
 	public BufferedImage draw() {
